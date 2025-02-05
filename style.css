@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://www.shutterstock.com/image-vector/cinema-theater-scene-curtain-vector-260nw-226725049.jpg");
+  background-size: cover;
+  background-position: center;
+
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #1f1f1f;
+  color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 3rem auto;
+  background-color: #2e2e2e;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #e6e600;
+}
+
+label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  font-weight: bold;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #e6e600;
+  color: #1f1f1f;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #cccc00;
+}
+
+.result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #404040;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #ff6666;
+  font-weight: bold;
+}
