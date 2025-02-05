@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ticket Price Calculator - Ticket Theater</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ticket Theater Price Calculator</h1>
+      <form id="initialForm">
+        <label for="day">Select Day of Purchase:</label>
+        <select id="day" required>
+          <option value="">--Select a day--</option>
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+          <option value="Sunday">Sunday</option>
+        </select>
+
+        <label for="ticketCount">Number of Tickets (limit: 6):</label>
+        <input
+          type="number"
+          id="ticketCount"
+          min="1"
+          max="6"
+          placeholder="Enter number of tickets"
+          required
+        />
+
+        <button type="submit">Next</button>
+      </form>
+
+      <form id="agesForm" style="display: none">
+        <h2>Enter Age for Each Ticket</h2>
+        <div id="agesContainer"></div>
+        <button type="submit">Calculate Price</button>
+      </form>
+
+      <div id="output" class="result"></div>
+    </div>
+  </body>
+</html>
